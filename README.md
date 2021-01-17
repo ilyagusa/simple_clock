@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# api
+in package.json
+rework %PATH% (your absolute path)
+
+{
+    "scripts": {
+        "start-api": "cd api && %PATH%/api/venv/Scripts/flask.exe run"
+    }
+}
+
+
+cd api
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+
+### `npm run start-api`
